@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Teste HTML5</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <nav>
+        <a href="#html-e-css">Elementos de HTML e CSS</a>
+        <a href="#html-tags">HTML</a>
+        <a href="#css">CSS</a>
+        <a href="#formulario">Formulário</a>
+    </nav>
+
+    <main class="content">
+        <header>
+            <h1><a name="html-e-css"> Elementos de HTML e CSS</a></h1>
+            <p>HTML (Linguagem de Marcação de Hipertexto) é o código que você 
+            usa para estruturar uma página web e seu conteúdo. Por exemplo, o 
+            conteúdo pode ser estruturado em parágrafos, em uma lista com 
+            marcadores ou usando imagens e tabelas.</p>
+
+            <p>CSS (Folha de Estilo em Cascata) é o código que você usa para dar 
+            estilo à sua página Web. CSS básico apresenta tudo que você precisa 
+            para começar. Responderemos a perguntas do tipo: Como mudo meu texto 
+            para preto ou vermelho? Como faço para que meu conteúdo apareça em 
+            determinados lugares na tela? Como decoro minha página com imagens e 
+            cores de fundo?</p>
+
+        </header>
+
+        <section>
+            <header>
+                <h1> <a name="html-tags">Principais Tags do HTML5</a> </h1>
+                <p>HTML não é uma linguagem de programação; é uma linguagem de marcação,
+                usada para definir a estrutura do seu conteúdo. HTML consiste de uma 
+                série de elementos, que você usa para delimitar ou agrupar diferentes 
+                partes do conteúdo para que ele apareça ou atue de determinada maneira. 
+                As tags anexas podem transformar uma palavra ou imagem num hiperlink, 
+                pode colocar palavras em itálico, pode aumentar ou diminuir a fonte 
+                e assim por diante.</p>
+
+            </header>
+
+            <div class="card">
+                <h2> O elemento <code class"codespan">&lt;main&gt;</code></h2>
+                <p id="meu-id"> A área de conteúdo principal de um documento inclui conteúdo 
+                exclusivo desse documento e exclui conteúdo que é repetido em 
+                um conjunto de documentos, como links de navegação do site, 
+                informações de direitos autorais, logotipos e banners do site 
+                e formulários de pesquisa (a menos que a função principal do 
+                documento ou aplicativo seja a de um formulário de pesquisa).</p>
+            </div>
+
+            <div class="card">
+                <h2> O elemento <code class"codespan">&lt;section&gt;</code></h2>
+                <p> O elemento section é usado para definir uma seção genérica 
+                de um documento ou aplicativo. Por exemplo, você pode optar 
+                por criar seções em torno de seu conteúdo; uma seção para 
+                informações de contato, outra seção para feeds de notícias, e 
+                assim por diante. É importante entender que esse elemento não 
+                é destinados a fins de estilização. Se você precisar envolver 
+                um elemento apenas para estilizá-lo, você deve continuar a usar
+                um <code class="codespan"> &lt;div&gt;</code> como faria antes.</p>
+            </div>
+
+            <div class="card">
+                <h2> O elemento <code class"codespan">&lt;nav&gt;</code></h2>
+                <p> O elemento <code class"codespan">&lt;nav&gt;</code> é usado para 
+                encapsular os principais links de navegação para outras páginas ou 
+                partes dentro da mesma página. Como é para uso em grandes blocos de 
+                navegação, não é estritamente destinado ao uso em rodapés (embora 
+                possa ser) e afins, onde grupos de links para outras páginas são 
+                comuns. Se você costuma marcar seus elementos de navegação com uma 
+                lista não ordenada (<code class"codespan">&lt;ul&gt;</code>) e 
+                um monte de tags de lista (<code class"codespan">&lt;li&gt;</code>), 
+                você pode ser melhor servido com uma navegação e um número de tags 
+                <code class"codespan">&lt;a&gt;</code> aninhadas.</p>
+            </div>
+
+            <div class="card">
+                <h2> O elemento <code class"codespan">&lt;article&gt;</code></h2>
+                <p> O elemento de artigo é usado para agrupar um conteúdo independente. 
+                Ao estruturar uma página, pergunte se o conteúdo que você pretende 
+                usar em uma tag de artigo pode ser considerado como um todo e colado 
+                em um site diferente e ainda fazer todo o sentido. Exemplos óbvios 
+                de conteúdo que devem ser agrupados com um elemento de artigo são 
+                postagens de blog ou notícias. Esteja ciente de que, ao aninhar 
+                elementos de artigo, presume-se que os elementos de artigo aninhados 
+                estejam principalmente relacionados ao artigo externo. </p>
+            </div>
+
+            <div class="card">
+                <h2> O elemento <code class"codespan">&lt;aside&gt;</code></h2>
+                <p> O elemento <code class"codespan">&lt;aside&gt;</code> é usado para 
+                conteúdo relacionado tangencialmente ao conteúdo ao seu redor. Em termos 
+                práticos, costumo usá-lo para sidebars, ou conteúdo em uma pequena dica 
+                sobre um assunto relacionado em um post de blog. Também é considerado 
+                adequado para citações, publicidade e grupos de elementos de navegação. 
+                Basicamente, qualquer coisa não diretamente relacionada ao conteúdo 
+                principal funcionaria bem em um <code class"codespan">&lt;aside&gt;</code>.
+                Se fosse um site de comércio eletrônico, consideraria áreas como 
+                <em>Clientes que compraram isso, também compraram...</em> como principais
+                candidatos a um <code class"codespan">&lt;aside&gt;</code>. </p>
+            </div>
+
+            <div class="card">
+                <h2> O elemento <code class"codespan">&lt;header&gt;</code></h2>
+                <p> Na prática, o <code class"codespan">&lt;header&gt;</code> pode ser 
+                usado para a área de “manchete” do cabeçalho de um site, mas também como 
+                uma introdução a outro conteúdo, como uma seção de introdução dentro de 
+                um elemento de <code class"codespan">&lt;article&gt;</code>. Você pode 
+                usá-lo quantas vezes forem necessárias na mesma página. Você pode ter um 
+                cabeçalho dentro de cada seção da sua página, por exemplo.</p>
+            </div>
+
+            <div class="card">
+                <h2> O elemento <code class"codespan">&lt;footer&gt;</code></h2>
+                <p> Como o <code class"codespan">&lt;header&gt;</code>, o elemento  
+                <code class"codespan"> &lt;footer&gt; </code> não faz parte do algoritmo 
+                de estrutura de tópicos, portanto, não seciona o conteúdo. Em vez disso, 
+                ele deve ser usado para conter informações sobre a seção em que se encontra. 
+                Pode conter <i>links</i> para outros documentos ou informações de direitos 
+                autorais, por exemplo. Assim como o <code class"codespan">&lt;header&gt;</code>,
+                ele pode ser usado várias vezes em uma página, se necessário. Por exemplo, 
+                pode ser usado para o rodapé de um blog, mas também como rodapé em um 
+                <code class"codespan">&lt;article&gt;</code> de postagem de blog 
+                no mesmo blog. No entanto, a especificação observa que as informações de 
+                contato do autor de uma postagem de blog devem ser agrupadas por um elemento 
+                de endereço.</p>
+            </div>
+
+            <div class="card">
+                <h2> O elemento <code class"codespan">&lt;div&gt;</code></h2>
+                <p>O elemento de agrupamento mais onipresente é o <code class"codespan">&lt;div&gt;</code>. 
+                O <code class"codespan">&lt;div&gt;</code> é tão amplamente usado porque não tem 
+                opinião. Não transmite nada. O único significado implícito de um 
+                <code class"codespan">&lt;div&gt;</code> é que ele agrupa algo. Apesar disso, muitas 
+                vezes você verá um <code class"codespan">&lt;div&gt;</code> envolvendo nada além de uma 
+                string de texto. Você só deve optar por um <code class"codespan">&lt;div&gt;</code> 
+                como último recurso. É o elemento a ser usado quando você não consegue pensar em 
+                nada melhor.</p>
+            </div>
+
+            <div class="card">
+                <h2> O elemento <code class"codespan">&lt;p&gt;</code></h2>
+                <p>O elemento <code class"codespan">&lt;p&gt;</code> é usado para marcar um parágrafo. 
+                No entanto, não pense que isso significa que só pode ser usado em textos de 3 a 4 linhas. 
+                Pelo contrário, use-o para marcar qualquer texto que não possa ser melhor marcado com um dos 
+                outros elementos. Para texto não específico, o elemento <code class"codespan">&lt;p&gt;</code> 
+                é definitivamente um melhor escolha do que um <code class"codespan">&lt;div&gt;</code>.</p>
+            </div>
+        </section>
+
+        <section>
+            <header>
+                <h1><a name="css"> CSS básico</a> </h1>
+                <p> Assim como o HTML, o CSS não é realmente uma linguagem de 
+                programação. Também não é uma linguagem de marcação — é uma 
+                linguagem de folhas de estilos. Isso significa que o CSS 
+                permite aplicar estilos seletivamente a elementos em 
+                documentos HTML.</p>
+            </header>
+
+            <div class="card">
+
+            <h2> Anatomia de um conjunto de regras CSS</h2>
+
+<pre>
+<code>p</code> { 
+     <code>color</code>: <code>red;</code>
+}
+</pre>
+
+            <p><strong>Seletor (Selector): </strong> O nome do elemento HTML 
+            no começo do conjunto de regras. Ele seleciona o(s) elemento(s) 
+            a serem estilizados (nesse caso, elementos p). Para dar estilo 
+            a um outro elemento, é só mudar o seletor.</p>
+
+            <p><strong>Declaração (Declaration): </strong> Uma regra simples 
+            como <code>color: red</code>; especificando quais das propriedades do elemento
+            você quer estilizar.</p>
+            
+            <p><strong>Propriedades (Property): </strong> Forma pela qual 
+            você estiliza um elemento HTML. (Nesse caso, <code>color</code> é uma 
+            propriedade dos elementos <code class="codespan">&lt;p&gt;</code>.) Em CSS, 
+            você escolhe quais propriedades você deseja afetar com sua regra.</p>
+
+            <p><strong>Valor da propriedade (Property value): </strong> À direita 
+            da propriedade, depois dos dois pontos, nós temos o valor de propriedade, 
+            que escolhe uma dentre muitas aparências possíveis para uma determinada 
+            propriedade (há muitos valores color(cor) além do red(vermelho)).</p>
+
+
+            </div>
+
+            <div class="card">
+                <h2>Notas importantes sobre sintaxe:</h2>
+                <ul>
+                    <li>Cada linha de comando deve ser envolvida em chaves (<code>{}</code>).</li>
+                    <li>Dentro de cada declaração, você deve usar dois pontos (<code>:</code>) 
+                    para separar a propriedade de seus valores. 
+                    <li>Dentro de cada conjunto de regras, você deve usar um 
+                    ponto e vírgula (<code>;</code>) para separar cada declaração da próxima.</li>
+                </ul>
+<pre>
+<code>p</code> {
+    <code>color:</code> <code>red;</code>
+    <code>width:</code> <code>500px;</code>
+    <code>border:</code><code>1px solid black;</code>
+}
+</pre>
+            </div>
+
+            <div class="card">
+                <h2> Diferentes tipos de seletores </h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th> Nome do seletor</th>
+                        <th> O que ele seleciona</th>	
+                        <th>Exemplo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                      <td>Seletor de elemento</td>
+                      <td> Todos os elementos HTML de determinado tipo. </td>
+                      <td> <code class="codespan">p</code> Seleciona <code class"codespan"> &lt;p&gt;</code></td>
+                    </tr>
+                    <tr>
+                      <td>Seletor de ID</td>
+                      <td>
+                          O elemento na página com o ID especificado. Em uma determinada página HTML, 
+                          é uma boa prática usar um elemento por ID (e claro, um ID por elemento) 
+                          mesmo que seja permitido usar o mesmo ID para vários elementos.
+                      </td>
+                      <td>
+                          <code class="codespan">#my-id </code> Seleciona 
+                          <code class="codespan">&lt;p id="my-id" &gt;</code> 
+                          ou <code class="codespan">&lt;a id="my-id"&gt;</code>
+                      </td>
+                    </tr>
+                    <tr>
+                        <td> Seletor de classe</td>
+                        <td> 
+                            O(s) elemento(s) na página com a classe específicada 
+                            (várias instâncias de classe podem aparecer em uma página). 
+                        </td>
+                        <td>
+                            <code class="codespan">.my-class</code> Seleciona 
+                            <code class="codespan">&lt;p class="my-class"&gt;</code> e 
+                            <code class="codespan">&lt;a class="my-class"&gt;</code>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Seletor de atributo</td>
+                        <td>O(s) elemento(s) na página com o atributo especificado.</td>
+                        <td>
+                            <code class="codespan">img[src]</code> Seleciona 
+                            <code class="codespan">&lt;img src="myimage.png"&gt;</code> mas não 
+                            <code class="codespan">&lt;img&gt;</code>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Seletor de pseudo-classe</td>
+                        <td> 
+                            O(s) elemento(s) específicado(s), mas somente quando estiver 
+                            no estado especificado. Ex.: com o mouse sobre ele.
+                        </td>
+                        <td>
+                            <code class="codespan">a:hover</code> Seleciona <code class="codespan">&lt;a&gt;</code>, 
+                            mas somente quando o mouse está em cima do link.
+                        </td>
+                    </tr>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+
+            <div class="card">
+                <h2> Principais propriedades usadas no CSS</h2>
+                <ul>
+                    <li><code>padding</code>, o espaço ao redor do conteúdo (ex.: ao redor do texto de um parágrafo).</li>
+                    <li><code>border</code>, a linha sólida do lado de fora do padding.</li>
+                    <li><code>margin</code>, o espaço externo a um elemento.</li>
+                    <li><code>width</code> (largura de um elemento).</li>
+                    <li><code>background-color</code>, a cor atrás do conteúdo de um elemento e do padding.</li>
+                    <li><code>color</code>, a cor do conteúdo de um elemento (geralmente texto).</li>
+                    <li><code>text-shadow</code>: cria uma sombra no texto dentro de um elemento.</li>
+                </ul>
+            </div>
+
+        </section>
+
+        <section>
+            <header>
+                <h1> <a name="formulario">Formulário</a> </h1>
+            </header>
+
+            <div class="form">
+                <form action="./result.html" method="GET">
+                    <div class="form-header">
+                        <div class="form-title"> 
+                            <h1>Formulário para Cadastro</h1>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-box">
+                            <label for="firstname">Primeiro Nome</label>
+                            <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="lastname">Sobrenome</label>
+                            <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="email">E-mail</label>
+                            <input id="email" type="email" name="email" placeholder="Digite seu e-mail">
+                        </div>
+                        <div class="input-box">
+                            <label for="telephone">Telefone</label>
+                            <input id="telephone" type="tel" name="telephone" placeholder="(xx) xxxx-xxxx">
+                        </div>
+                        <div class="input-box">
+                            <label for="password">Senha</label>
+                            <input id="password" type="password" name="password" maxlength="8" placeholder="Digite sua senha" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="confirm-password">Confirmação da senha</label>
+                            <input id="confirm-password" type="password" name="confirm-password" maxlength="8" placeholder="Redigite sua senha" required>
+                        </div>
+                    </div>
+                    <div class="form-footer">
+                        <div class="clear-button">
+                            <button type="reset"> Limpar</button>
+                        </div>
+                        <div class="login-button">
+                            <button type="submit"> Entrar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+<footer>
+    Informação sobre a seção e quem a escreveu.
+</footer>
+
+</html>

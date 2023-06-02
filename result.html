@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Result HTML5</title>
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta charset="utf-8" />
+    </head>
+
+    <body>
+        <main class="content">
+            <div class="card">
+                <div id="results">
+                    <script>
+                        const resultsList = document.getElementById('results')
+                        new URLSearchParams(window.location.search).forEach(
+                            (value, name)=>{
+                                resultsList.append(`${name}: ${value}`)
+                                resultsList.append(document.createElement('br'))
+                            }
+                        )
+                    </script>
+                    <div class="login-button">
+                        <button>
+                            <a href="./index.html#formulario"> Voltar ao Formulário</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

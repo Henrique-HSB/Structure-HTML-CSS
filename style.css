@@ -1,0 +1,268 @@
+* {
+	line-height:1.5;
+	font-family: Verdana, sans-serif;
+}
+
+h1 {
+    margin: 0;
+    padding: 20px 0;
+    color: #00539F;
+    text-shadow: 1px 1px 1px black;
+}
+
+body {
+    background-color: #A3CFC3;
+    margin: auto;
+    margin-top: 50px;
+    align-items: center;
+}
+
+.content {
+    min-width: 300px;
+    max-width: 800px;
+    margin:0 auto;
+    background-color: #D3FFF3;
+    padding:20px;
+    border: 2px solid black;
+}
+
+nav {
+    width: 100%;
+    height: 30px;
+    top: 0;
+    position: fixed;
+    background-color:#FC7458 ;
+    padding: 10px 0;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+nav a {
+    float: left;
+    padding: 5px 10px 5px 10px ;
+    font-size: 15px;
+    color: black;
+    list-style: none;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+nav a:hover {
+    background-color: #600675;
+    color: #ffffff;
+    transition: 0.3s;
+    font-size: 17px;
+    padding: 5px 20px 5px 20px ;
+}
+
+code {
+    font-family: monospace;
+    color: crimson;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-size: 125%;
+    white-space: nowrap;
+}
+
+code:hover {
+    color: darkred;
+    background: lightgray;
+    border: 2pt solid darkred;
+    border-radius: 3pt;
+}
+
+pre {
+    font-family: monospace;
+	color: crimson;
+	background: #e4e6e8;
+	padding: 15px;
+	font-size: 120%;
+    border: 2px solid darkgray;
+    border-radius: 10px;
+}
+
+main {
+    padding: 50px 0 50px 0; 
+}
+
+div + div {
+  margin-top: 40px;
+}
+
+.card {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #F4E9BC;
+    border-radius: 15px;
+    border: 2px solid darkgray;
+    padding: 10px 15px 10px 15px;
+}
+
+.card:hover {
+    border: 2px solid black;
+    /*background-color: #E4E9AC;*/
+    background-color: #D4D99C;
+}
+
+.exemplo {
+    background-color: #58E1FC;
+    border-radius: 15px;
+    padding: 0 15px ;
+    width: 80%;
+    border: solid darkblue 2px;
+}
+
+p {
+    text-align: justify;
+}
+
+td {
+    border: 2px solid darkblue;
+    border-radius: 7px;
+    padding: 5px;
+    background: #58E1FC;
+}
+
+th {
+    border: 2px solid darkblue;
+    border-radius: 7px;
+    padding: 5px;
+    background: #42969c;
+    margin:0;
+}
+
+td:hover {
+    background: #38C1CC;
+} 
+
+thead {
+    padding: 5px;
+}
+
+table {
+    border: 2px solid darkpink;
+    /*background: #F4E9BC;*/
+    border-radius: 15px;
+    background: pink;
+    padding: 15px;
+}
+
+ul li::marker {
+    font-size: 15pt;
+}
+
+li {
+    list-style: square;
+}
+
+footer {
+    width: 100%;
+    height: 200px;
+    color: lightgray;
+    background: #666666;
+    padding: 10px;
+    bottom: 0;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FC7458;
+    padding: 1rem;
+    border: none;
+    border-radius: 15px;
+}
+
+.form-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+}
+
+.form h1 {
+    margin: 0;
+    padding: 0;
+    color: #00539F;
+    text-shadow: 1px 1px 1px black;
+}
+
+.login-button {
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.login-button button {
+    border: none;
+    background-color: #7fa2c2;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-button button:hover {
+    background-color: #58E1FC;
+}
+
+.login-button button a {
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+}
+
+.clear-button {
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.clear-button button {
+    border: none;
+    color:#e4e6e8;
+    background-color: #581a0e;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.clear-button button:hover {
+    background-color: #FC7458;
+    color: black;
+}
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.input-box {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-box input {
+    margin: 0.5rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1xp 1px 2px black;
+}
+
+.form-footer {
+    background-color: #e4e6e8;
+    display: flex;
+    flex-direction: row;
+    padding: 0.8rem 1.2rem;
+    justify-content: space-around;   
+    border-radius: 15px;
+}
